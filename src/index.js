@@ -18,15 +18,14 @@ app.use(express.json());
 
 // HTTP Logger
 // app.use(morgan('combined'));
-
 // Template engine
 app.engine(
     'hbs',
-              handlebars({
+    handlebars({
         extname: '.hbs',
-              }),
+    }),
 );
-          app.set('view engine', 'hbs');
+              app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 // routes init
