@@ -22,11 +22,11 @@ app.use(express.json());
 // Template engine
 app.engine(
     'hbs',
-    handlebars({
+              handlebars({
         extname: '.hbs',
-    }),
+              }),
 );
-app.set('view engine', 'hbs');
+          app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 // routes init
